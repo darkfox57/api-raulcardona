@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "invitation_forms",
+  "info": {
+    "singularName": "invitation-form",
+    "pluralName": "invitation-forms",
+    "displayName": "InvitationForm",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FirstName": {
+      "type": "string",
+      "required": true
+    },
+    "LastName": {
+      "type": "string",
+      "required": true
+    },
+    "Phone": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "Politics": {
+      "type": "boolean",
+      "required": true
+    },
+    "location": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::location.location",
+      "inversedBy": "locations"
+    }
+  }
+}

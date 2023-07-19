@@ -39,6 +39,12 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "mappedBy": "blogs"
+    },
+    "invitation_form": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::invitation-form.invitation-form",
+      "mappedBy": "location"
     }
   }
 }

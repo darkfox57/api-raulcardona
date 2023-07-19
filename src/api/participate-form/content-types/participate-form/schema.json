@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "participate_forms",
+  "info": {
+    "singularName": "participate-form",
+    "pluralName": "participate-forms",
+    "displayName": "Volunter",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "LastName": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Phone": {
+      "type": "string",
+      "required": true
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Enviar un video",
+        "Préstame tu balcón",
+        "Préstame tu carro",
+        "Me sumo a un recorrido"
+      ],
+      "required": true
+    },
+    "politics": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

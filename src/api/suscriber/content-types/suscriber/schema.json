@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "suscribers",
+  "info": {
+    "singularName": "suscriber",
+    "pluralName": "suscribers",
+    "displayName": "Suscriber"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Politics": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}
